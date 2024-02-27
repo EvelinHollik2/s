@@ -6,3 +6,98 @@
     background-color: var(--custom--background-color);
     border-color: var(--custom--border-color);
 }
+#dineease{
+    padding: 130px;
+}
+h1{
+    font-style: bold;
+}
+#Testimonials{
+    background-color: rgb(207,183,249);
+}
+
+.cards-text{
+    background-color: white;
+}
+#Restaurantsearch{
+    text-align: center;
+}
+
+
+/*Contact Us*/
+.information{
+    background-color: var(--custom--background-color);
+    color: white;
+    width: 500px;
+    height: 400px;
+}
+#message{
+    text-align: right;
+}
+
+.privacy{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*About Us*/
+.about{
+    text-align: center;
+}
+
+
+/*About us horisontal timeline*/
+body{
+    margin-top:20px;
+}
+.hori-timeline .events {
+    border-top: 3px solid #e9ecef;
+}
+.hori-timeline .events .event-list {
+    display: inline-block;        
+    width: 18%;
+    padding-top: 45px;
+    position: relative;
+    text-align: center;
+    margin-right: 0;
+}
+.hori-timeline .events .event-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed #dee2e6;
+    top: 0;
+}
+
+
+/*evszam*/
+.hori-timeline .events .event-list .event-date {
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    width: 75px;
+    margin: 0 auto;
+    border-radius: 4px;
+
+}
+
+/*.bg-soft-primary {
+    background-color: rgb(124,58,237);
+}*/
+
+.text{
+    color:rgb(124,58,237);
+}
+
+.hori-timeline .events .event-list:nth-child(even) .event-date {
+    margin-top: -20px;
+}
+
+.card {
+    border: none;
+    margin-bottom: 24px;
+    -webkit-box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+    box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+}

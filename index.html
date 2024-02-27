@@ -35,13 +35,13 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
+                                <a class="nav-link" href="AboutUs.html">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Contact</a>
+                                <a class="nav-link" href="Contact.html">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -50,22 +50,122 @@
         </header>
         <main>
             <div class="row" id="HeroSection">
-                <div class="col-md-6 col-xs-12">
+                <div class="col-md-6 col-xs-12" id="dineease">
                     <h1>DineEase: Exceptional Dining Awaits.</h1>
                     <p>Dive into culinary wonders with DineEase. We curate top-rated restaurants, each with distinct
                         flavors and ambiance. From international dishes to traditional delights and gastronomic
                         adventures, find your perfect spot with DineEase.</p>
-                        <button class="btn btn-primary"><img src="images/Search Iconvector.svg">Explore Restaurants</button>
+                    <button class="btn btn-primary"><img src="images/Search Iconvector.svg">Explore Restaurants</button>
                 </div>
                 <div class="col-md-6 col-xs-12">
                     <img src="images/Hero Illustrationvector.svg" alt="HERO">
                 </div>
             </div>
-            <div id="top3"></div>
-            <div id="velemenyek"></div>
-            <div id="keresosav"></div>
+            <div id="top3">
+                <h1>Featured Restaurants:</h1>
+                <p>Discover Unforgettable Dining Destinations</p>
+                <div class="row">
+                    <div class="card" style="width: 400px;">
+                        <img src="images/Restaurant1.png" alt="restaurant">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between"><span class="m-4">Sarmale
+                                    Bistro</span><span class="m-4"><img src="images/star.png">
+                                    <img src="images/star.png">
+                                    <img src="images/star.png">
+                                    <img src="images/star.png">
+                                    <img src="images/star.png">
+                                </span></h5>
+                            <p class="card-text">Experience Romania's culinary heart at Sarmale Bistro. Savor classics
+                                with a modern touch in our intimate, authentic ambiance. Celebrate timeless tradition.
+                            </p>
+                            <a href="#" class="btn btn-primary">View
+                                restaurant »</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 400px;">
+                        <img src="images/Restaurant2.png" alt="restaurant">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between"><span class="m-4">La Piața</span><span
+                                    class="m-4"><img src="images/star.png">
+                                    <img src="images/star.png">
+                                    <img src="images/star.png">
+                                    <img src="images/star.png">
+                                    <!--<img src="images/star.png">-->
+                                </span></h5>
+                            <p class="card-text">Discover a fusion of Europe's flavors at La Piața, set in the heart of
+                                the city. Savor dishes from locally-sourced ingredients in our cozy bistro ambiance.</p>
+                            <a href="#" class="btn btn-primary">View
+                                restaurant »</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 400px;">
+                        <img src="images/Restaurant3.png" alt="restaurant">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between"><span class="m-4">Halász
+                                    Fogadó</span><span class="m-4"><img src="images/star.png">
+                                    <img src="images/star.png">
+                                    <img src="images/star.png">
+                                    <img src="images/star.png">
+                                    <img src="images/star.png">
+                                </span></h5>
+                            <p class="card-text">Immerse in Eastern European authenticity at Halász Fogadó. Relish
+                                traditional dishes amid an atmosphere rich in charm and history. Join us for a timeless
+                                culinary experience.</p>
+                            <a href="#" class="btn btn-primary">View
+                                restaurant »</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Testimonials">
+                <h1>Delightful Experiences Shared by Our Guests
+                </h1>
+                <div class="velemeny">
+                    <p>Exquisite flavors, impeccable service, and a memorable ambiance – DineEase made our celebration
+                        truly special!</p>
+                    <p class="alairas">Robert & Emily</p>
+                </div>
+                <div class="velemeny">
+                    <p>DineEase guided us to hidden gems we never knew existed! We've become food adventurers, thanks to
+                        this platform.</p>
+                    <p class="alairas">Lisa & Mark</p>
+                </div>
+                <div class="velemeny">
+                    <p>With DineEase, we've uncovered culinary treasures right in our city. Every dining recommendation
+                        feels like an exclusive invitation to a world of flavors. We thought we knew our local dining
+                        scene, but DineEase introduced us to so much more.</p>
+                    <p class="alairas">Emma & Jacob</p>
+                </div>
+            </div>
+            <div id="Restaurantsearch">
+                <h1>Find Your Perfect Dining Spot</h1>
+                <p>Search by Cuisine, Location, or Name</p>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search for restaurants" name="search"><img src="images/Filter Iconvector.svg">
+                        <button type="submit" style="background-color: rgb(207,183,249);"><img
+                                src="images/Search Iconvector.svg"></button>
+                    </form>
+                </div>
+            </div>
         </main>
-        <footer></footer>
+    </div>
+    <footer class="container-fluid bg-dark text-white">
+        <div class="container d-flex justify-content-between row mx-auto py-5">
+            <div class="col-6">
+                <img src="images/logomark.png" alt="Logomark">
+                <p><a href="Privacy.html" class="privacy">Privacy Policy</a></p>
+                <p>+36 30 123 4567 support@dineease.com</p>
+                <p>&COPY; 2024 - All rights reserved</p>
+
+            </div>
+            <div class="col-4">
+                <p>Follow Us</p>
+                <p><img src="images/Facebook Iconvector.svg" alt="Facbook"><img src="images/Instagram Iconvector.svg"
+                        alt="Instagram"> <img src="images/Twitter Iconvector.svg" alt></p>
+            </div>
+        </div>
+    </footer>
     </div>
 </body>
 
