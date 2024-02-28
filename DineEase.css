@@ -1,5 +1,6 @@
 :root{
     --custom--background-color: rgb(124,58,237);
+    --custom--background-color2: white; 
 }
 
 .btn-primary, .btn-primary:hover{
@@ -29,6 +30,74 @@ view{
     text-align: center;
     color: rgb(124, 58, 237);
 }
+.velemeny{
+    background-color: white;
+    padding: 50px;
+}
+
+.se{
+    color: black;
+}
+
+div .top3card .card-img-top{
+    min-width: 300px;
+    min-height: 280px;
+}
+
+#top3 {
+    position: relative;
+    width: auto;
+    /* Adj megfelelő szélességet a div-nek */
+    height: auto;
+    /* Adj megfelelő magasságot a div-nek */
+  
+  
+    /* Az alsó bal sarkon lévő kör */
+    &::before {
+      z-index: -5000;
+      content: '';
+      position: absolute;
+      width: var(--circle-diameter);
+      /* Állítsd be a kör szélességét */
+      height: var(--circle-diameter); 
+      /* Állítsd be a kör magasságát */
+      border-radius: 50%;
+      /* Kerekített szélek kialakítása */
+      background-color: var(--background-color-light);
+      /* Válassz egy kör színt */
+      bottom: -50px;
+      left: -20px;
+    }
+  
+    /* A felső jobb sarkon lévő kör */
+    &::after {
+      z-index: -5000;
+      content: '';
+      position: absolute;
+      width: var(--circle-diameter);
+      /* Állítsd be a kör szélességét */
+      height: var(--circle-diameter);
+      /* Állítsd be a kör magasságát */
+      border-radius: 50%;
+      /* Kerekített szélek kialakítása */
+      background-color: var(--background-color-light);
+      /* Válassz egy kör színt */
+      top: 0;
+      right: 0;
+    }
+  
+  
+  }
+  #top3restorants {
+    position: relative;
+    width: 80%;
+    /* Adj megfelelő szélességet a div-nek */
+    height: auto;
+    /* Adj megfelelő magasságot a div-nek */
+  }  
+
+
+
 
 /*Contact Us*/
 .information{
@@ -58,13 +127,17 @@ view{
 
 }
 
-.connectwith{
-    background-color: white;
-    color:rgb(124, 58, 237);
-}
-
 #team{
     align-items: center;
+}
+
+#szoveg{
+    padding: 30px 245px;
+}
+.btn-secondary, .btn-secondary:hover{
+    background-color: var(--custom--background-color2);
+    color: var(--custom--background-color);
+
 }
 
 /*About us horisontal timeline*/
@@ -122,3 +195,4 @@ body{
 /*.bg-soft-primary {
     background-color: rgb(124,58,237);
 }*/
+
