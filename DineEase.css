@@ -96,7 +96,9 @@ div .top3card .card-img-top{
     /* Adj megfelelő magasságot a div-nek */
   }  
 
-
+.quote{
+    max-width: 25px;
+}
 
 
 /*Contact Us*/
@@ -105,6 +107,7 @@ div .top3card .card-img-top{
     color: white;
     width: 500px;
     height: 400px;
+    padding: 30px 50px;
 }
 #message{
     text-align: right;
@@ -114,6 +117,10 @@ div .top3card .card-img-top{
     text-decoration: none;
     color: white;
 }
+.contactUs{
+    padding: 0px 50px;
+}
+
 
 
 /*About Us*/
@@ -138,6 +145,10 @@ div .top3card .card-img-top{
     background-color: var(--custom--background-color2);
     color: var(--custom--background-color);
 
+}
+
+.mess{
+    width: 50%;
 }
 
 /*About us horisontal timeline*/
