@@ -18,20 +18,19 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(html);
         top3.innerHTML = html; //-- frissíti a DOM-ot, megjeleníti a kártyákat
         document.getElementById('top4').innerHTML=html;
+        document.getElementById('top5').innerHTML=html;
     }
     function getRestoranteCard(restoranteData) {
-
         let html = `<div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
                         <div class="card top3card">
                              <img src="data\\${restoranteData.image}" class="card-img-top" alt="${restoranteData.name}">
                              <div class="card-body">
                                  <h5
                                      class="card-title d-flex justify-content-between"><span
-                                         class="col-4">${restoranteData.name.trim()}</span>
-                                         <span class="col-4">${rate(restoranteData.rating)}</span></h5>
+                                         class="col-5">${restoranteData.name.trim()}</span>
+                                         <span class="col-3">${rate(restoranteData.rating)}</span></h5>
                                  <p class="card-text">${restoranteData.description}</p>
-                                 <a href="#" class="btn btn-primary">View
-                                     restaurant</a>
+                                 <a href="#" class="view">Views restaurant »</a>
                              </div>
                          </div>
                     </div>`;
@@ -50,6 +49,5 @@ document.addEventListener('DOMContentLoaded', function () {
         return stars;
     }
     init();
-
 }
 );
